@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    background-color:#87ceeb;
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+}
+
+.title {
+    margin: 0 0 0 50px;
+}
+
+.title a{
+    color: white;
+}
+
+.main-menu {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 50px 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content:center;
+}
+
+.main-menu ul li {
+    font-size: 2rem;
+    margin: 40px 40px 22px 0;
+}
+
+.main-menu a {
+    color: white;
+}
+
+body {
+    background-image: url(images/sunsun.jpg);
+    height:auto;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+    #wrap {
+        width: 100%;
+    }
+}
+
+/*スマホ用*/
+@media all and (max-width: 599px) {
+    .main-menu ul {
+        display: block;
+    }
+
+    .main-menu ul li {
+        text-align: center;
+    }
+
+    main {
+        display: block;
+        flex-direction: unset;
+    }
+
+    .sub-menu ul li {
+        text-align: center;
+    }
+}

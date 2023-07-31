@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+header {
+    background-color: #add8e6;
+    display: flex;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+}
+
+.title {
+    margin: 0 0 0 50px;
+}
+
+.title a {
+    color: white;
+}
+
+.main-menu {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 50px 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-menu ul {
+    display: flex;
+}
+
+.main-menu ul li {
+    font-size: 1rem;
+    margin: 40px 40px 22px 0;
+}
+
+.main-menu a {
+    color: white;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    margin: 100px 0 40px 50px;
+}
+
+h2 {
+    margin: 0 0 15px 50px;
+}
+
+p {
+    margin: 0 0 100px 50px;
+}
+
+img {
+    float: right;
+    margin-right: 50px;
+}
+
+.Works {
+    overflow: hidden;
+}
+
+.Works_item {
+    justify-content: flex-start;
+}
+
+.LAT {
+    display: flex;
+}
+
+/*.Namecard{
+    display: flex;
+}*/
+
+.Namecard_video {
+    margin: 0 50px 0 0;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 100vh;
+    margin-top: 100px;
+    background: #768392;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+    #wrap {
+        width: 100%;
+    }
+}
+
+/*スマホ用*/
+@media all and (max-width: 599px) {
+    .main-menu ul {
+        display: block;
+    }
+
+    .main-menu ul li {
+        text-align: center;
+    }
+
+    main {
+        display: block;
+        flex-direction: unset;
+    }
+
+    .sub-menu ul li {
+        text-align: center;
+    }
+}
